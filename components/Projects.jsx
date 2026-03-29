@@ -3,7 +3,7 @@ export default function Projects() {
   const projects = [
     {
       image: "/1.png",
-      title: "Task Manger",
+      title: "Task Manager",
       description: `Task Manager adalah aplikasi web sederhana yang digunakan untuk membantu pengguna mengelola aktivitas atau daftar tugas harian. Aplikasi ini memungkinkan pengguna untuk menambahkan, menandai, dan menghapus tugas sehingga membantu meningkatkan produktivitas dalam mengatur pekerjaan.
         
         Aplikasi ini juga ada fitur filter tugas (All, Active, Completed) dan penghitung tugas yang belum selesai.`,
