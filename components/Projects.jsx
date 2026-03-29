@@ -2,14 +2,28 @@ import Image from "next/image";
 export default function Projects() {
   const projects = [
     {
+      image: "/1.png",
+      title: "Task Manager",
+      description: `Task Manager adalah aplikasi web sederhana yang digunakan untuk membantu pengguna mengelola aktivitas atau daftar tugas harian. Aplikasi ini memungkinkan pengguna untuk menambahkan, menandai, dan menghapus tugas sehingga membantu meningkatkan produktivitas dalam mengatur pekerjaan.
+        
+        Aplikasi ini juga ada fitur filter tugas (All, Active, Completed) dan penghitung tugas yang belum selesai.`,
+      techStack: "React.js/Next.js | TailwindCSS | REST API",
+    },
+    {
       image: "/2.png",
       title: "Sistem Memprediksi Kebutuhan Obat",
-      description: "Neural Network LSTM untuk memprediksi kebutuhan obat.",
+      description: `Sistem Memprediksi Kebutuhan Obat merupakan aplikasi berbasis web yang menggunakan algoritma Neural Network dengan metode Long Short-Term Memory (LSTM) untuk memprediksi kebutuhan obat di Puskesmas Kelurahan Lansot, Tomohon.
+
+      Model machine learning dilatih menggunakan data historis penggunaan obat untuk membantu tenaga kesehatan dalam memperkirakan jumlah permintaan obat di masa mendatang sehingga dapat mengurangi risiko kekurangan atau kelebihan stok.`,
+      techStack:
+        "Python | Machine Learning | Neural Network | PHP | Codeigniter | MySQL | JavaScript | REST API",
     },
     {
       image: "/3.png",
       title: "Pengelolahan Harga Produksi Pangan",
-      description: "Sistem manajemen harga pangan di kabupaten minahasa",
+      description:
+        "Sistem Pengelolaan Harga Produksi Pangan adalah aplikasi web yang digunakan untuk mengelola data harga komoditas pangan di Kabupaten Minahasa. Sistem ini memungkinkan admin untuk menambahkan, memperbarui, dan mengelola data harga produk pangan sehingga informasi harga dapat dipantau dengan lebih terstruktur dan efisien.",
+      techStack: "PHP | Codeigniter | DataTables | MySQL",
     },
   ];
 
@@ -37,8 +51,12 @@ export default function Projects() {
             <h3 className="mt-5 mb-3 text-xl font-semibold text-black">
               {project.title}
             </h3>
-            <p className="text-base font-medium text-gray-800">
+            <p className="text-base mb-3 font-medium text-gray-800 whitespace-pre-line">
               {project.description}
+            </p>
+            <p className="text-base font-normal text-gray-500">
+              Tech Stack: <br />
+              {project.techStack}
             </p>
           </div>
         ))}
