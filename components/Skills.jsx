@@ -13,6 +13,7 @@ export default function Skills() {
     "MySQL",
     "Python",
     "Machine Learning",
+    "Neural Network",
     "Git",
   ];
 
