@@ -8,6 +8,7 @@ export default function Projects() {
         
         Aplikasi ini juga ada fitur filter tugas (All, Active, Completed) dan penghitung tugas yang belum selesai.`,
       techStack: "React.js/Next.js | TailwindCSS | REST API",
+      repository: "https://github.com/Victorpaat881/Task-manager",
     },
     {
       image: "/2.png",
@@ -17,6 +18,7 @@ export default function Projects() {
       Model machine learning dilatih menggunakan data historis penggunaan obat untuk membantu tenaga kesehatan dalam memperkirakan jumlah permintaan obat di masa mendatang sehingga dapat mengurangi risiko kekurangan atau kelebihan stok.`,
       techStack:
         "Python | Machine Learning | Neural Network | PHP | Codeigniter | MySQL | JavaScript | REST API",
+      repository: "https://github.com/Victorpaat881/sistem-skripsi",
     },
     {
       image: "/3.png",
@@ -24,11 +26,16 @@ export default function Projects() {
       description:
         "Sistem Pengelolaan Harga Produksi Pangan adalah aplikasi web yang digunakan untuk mengelola data harga komoditas pangan di Kabupaten Minahasa. Sistem ini memungkinkan admin untuk menambahkan, memperbarui, dan mengelola data harga produk pangan sehingga informasi harga dapat dipantau dengan lebih terstruktur dan efisien.",
       techStack: "PHP | Codeigniter | DataTables | MySQL",
+      repository:
+        "https://github.com/Victorpaat881/Pengelolahan-Harga-Produksi-Pangan-Dinas-Pangan-Kabupaten-Minahasa",
     },
   ];
 
   return (
-    <section id="projects" className="bg-slate-300 pt-36 pb-16">
+    <section
+      id="projects"
+      className="bg-slate-300 pt-36 pb-16 dark:bg-slate-400"
+    >
       <div className="w-full px-4">
         <div className="mx-auto mb-16 max-w-xl text-center">
           <h2 className="mb-4 text-3xl font-bold text-gray-800 sm:text-4xl">
@@ -40,24 +47,32 @@ export default function Projects() {
       <div className="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
         {projects.map((project, index) => (
           <div key={index} className="mb-12 p-4 md:w-1/2">
-            <div className="overflow-hidden rounded-md shadow-md">
+            <div className="overflow-hidden rounded-md shadow-lg">
               <Image
                 src={project.image}
                 alt={project.title}
                 width={510}
                 height={250}
+                className="w-full h-auto"
               />
             </div>
             <h3 className="mt-5 mb-3 text-xl font-semibold text-black">
               {project.title}
             </h3>
-            <p className="text-base mb-3 font-medium text-gray-800 whitespace-pre-line">
+            <p className="text-base mb-3 font-medium text-gray-900 whitespace-pre-line">
               {project.description}
             </p>
-            <p className="text-base font-normal text-gray-500">
+            <p className="text-base font-normal text-gray-500 dark:text-gray-700">
               Tech Stack: <br />
               {project.techStack}
             </p>
+            <a
+              href={project.repository}
+              target="_blank"
+              className="inline-block bg-black text-white mt-2 px-4 py-2 rounded-lg hover:bg-gray-800"
+            >
+              View on GitHub
+            </a>
           </div>
         ))}
       </div>
