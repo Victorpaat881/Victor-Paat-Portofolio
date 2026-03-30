@@ -2,6 +2,7 @@ export default function Skills() {
   const skills = [
     "JavaScript",
     "Jquery",
+    "DataTables",
     "React.js",
     "Next.js",
     "TailwindCSS",

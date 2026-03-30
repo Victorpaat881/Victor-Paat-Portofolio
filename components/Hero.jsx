@@ -17,7 +17,7 @@ export default function Hero() {
 
       <a
         href="#projects"
-        className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 dark:border"
+        className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-700 dark:border"
       >
         View My Projects
       </a>
