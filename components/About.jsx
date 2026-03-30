@@ -6,7 +6,7 @@ export default function About() {
           <h2 className="mb-4 text-3xl font-bold text-gray-800 sm:text-4xl">
             Tentang Saya
           </h2>
-          <p className="text-md font-small text-secondary text-gray-600 md:text-lg">
+          <p className="text-md font-small text-secondary text-gray-600 md:text-lg dark:text-gray-800">
             Saya seorang Full Stack Developer yang memiliki minat pada
             pengembangan web modern menggunakan React, Next.js, dan backend
             development. Saya juga memiliki pengalaman dalam machine learning
