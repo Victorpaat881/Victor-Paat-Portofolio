@@ -7,9 +7,11 @@ export default function About() {
             Tentang Saya
           </h2>
           <p className="text-md font-small text-secondary text-gray-600 md:text-lg dark:text-gray-800">
-            Saya seorang Full Stack Developer yang memiliki minat pada
-            pengembangan web modern menggunakan React, Next.js, dan backend
-            development. Saya juga memiliki pengalaman dalam machine learning
+            Saya seorang Full Stack Developer yang terbiasa dalam membuat
+            website menggunakan aplikasi berbasis PHP menggunakan Codeigniter
+            dan menggunakan MySQL sebagai Database. Serta itu saya mempunyai
+            pengalaman dan minat pada pengembangan web modern menggunakan React
+            dan Next.js. Saya juga memiliki pengalaman dalam machine learning
             menggunakan Python.
           </p>
         </div>
