@@ -26,7 +26,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div id="top" className="container">
+    <div id="top" className="w-full">
       <div className="relative flex items-center justify-between bg-gray-900">
         <div className="px-4">
           <a
