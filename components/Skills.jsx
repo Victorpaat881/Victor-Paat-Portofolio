@@ -24,7 +24,7 @@ export default function Skills() {
         Skills
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="mx-auto max-w-5xl flex flex-wrap justify-center gap-4">
         {skills.map((skill, index) => (
           <span
             key={index}
